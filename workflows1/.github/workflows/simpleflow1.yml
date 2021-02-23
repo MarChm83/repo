@@ -1,0 +1,14 @@
+name: firstflow
+
+on: [push]
+
+jobs:
+    run-shell:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: welcome
+              run: echo "hello world"
+            - name: mmultiple commands
+              run: |
+                  node -v
+                  npm -v
